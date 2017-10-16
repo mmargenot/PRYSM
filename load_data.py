@@ -57,3 +57,9 @@ class ChromeHistory(History):
     def load_sqlite_sequence(self):
         return pd.read_sql_query(select_all_query.format('sqlite_sequence'), self.connection)
         
+class FirefoxHistory(History):
+
+    def load_table(self):
+        pass
+
+
