@@ -6,7 +6,7 @@ select_all_query = "SELECT * FROM {0}"
 class History:
 
     def __init__(self, db_dir):
-        self.db_dir = db_directory
+        self.db_dir = db_dir
         self.connection = sql.connect(self.db_dir)
 
     def get_directory(self):
